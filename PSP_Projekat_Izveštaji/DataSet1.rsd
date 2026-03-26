@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>PSP_WorldWideImportersDW</DataSourceReference>
+      <CommandText>SELECT InvoiceLineFact.InvoiceLineKey, InvoiceLineFact.InvoiceLineID, InvoiceLineFact.InvoiceID, InvoiceLineFact.Quantity, InvoiceLineFact.UnitPrice, InvoiceLineFact.TaxRate, InvoiceLineFact.LineProfit, InvoiceLineFact.TaxAmount, 
+                  InvoiceLineFact.PriceExcludingTax, InvoiceLineFact.PriceIncludingTax, CustomerDimension.CustomerName, CustomerDimension.CreditLimit, CustomerDimension.StandardDiscountPercentage, 
+                  CustomerDimension.CustomerCategoryName, StockItemDimension.StockItemName, StockItemDimension.[Size], StockItemDimension.ColorName, PackageTypeDimension.PackageTypeName, BrandDimension.BrandName, 
+                  SupplierDimension.SupplierName, SalesPersonDimension.FullName, SalesPersonDimension.EmailAddress
+FROM     InvoiceLineFact INNER JOIN
+                  TimeDimension ON InvoiceLineFact.TimeKey = TimeDimension.TimeKey INNER JOIN
+                  CustomerDimension ON InvoiceLineFact.CustomerKey = CustomerDimension.CustomerKey INNER JOIN
+                  PackageTypeDimension ON InvoiceLineFact.PackageTypeKey = PackageTypeDimension.PackageTypeKey INNER JOIN
+                  SalesPersonDimension ON InvoiceLineFact.SalesPersonKey = SalesPersonDimension.SalesPersonKey INNER JOIN
+                  StockItemDimension ON InvoiceLineFact.StockItemKey = StockItemDimension.StockItemKey INNER JOIN
+                  BrandDimension ON StockItemDimension.BrandKey = BrandDimension.BrandKey INNER JOIN
+                  SupplierDimension ON StockItemDimension.SupplierKey = SupplierDimension.SupplierKey</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="InvoiceLineKey">
+        <DataField>InvoiceLineKey</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="InvoiceLineID">
+        <DataField>InvoiceLineID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="InvoiceID">
+        <DataField>InvoiceID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Quantity">
+        <DataField>Quantity</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="UnitPrice">
+        <DataField>UnitPrice</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="TaxRate">
+        <DataField>TaxRate</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="LineProfit">
+        <DataField>LineProfit</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="TaxAmount">
+        <DataField>TaxAmount</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="PriceExcludingTax">
+        <DataField>PriceExcludingTax</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="PriceIncludingTax">
+        <DataField>PriceIncludingTax</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="CustomerName">
+        <DataField>CustomerName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CreditLimit">
+        <DataField>CreditLimit</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="StandardDiscountPercentage">
+        <DataField>StandardDiscountPercentage</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="CustomerCategoryName">
+        <DataField>CustomerCategoryName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="StockItemName">
+        <DataField>StockItemName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Size">
+        <DataField>Size</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ColorName">
+        <DataField>ColorName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PackageTypeName">
+        <DataField>PackageTypeName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="BrandName">
+        <DataField>BrandName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SupplierName">
+        <DataField>SupplierName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="FullName">
+        <DataField>FullName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="EmailAddress">
+        <DataField>EmailAddress</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="PSP_WorldWideImportersDW">
+  <ConnectionProperties>
+    <Extension>OLEDB</Extension>
+    <ConnectString>Provider=SQLOLEDB.1;Data Source=DESKTOP-PSN02AN\SQLEXPRESS;Initial Catalog=PSP_WorldWideImportersDW</ConnectString>
+    <IntegratedSecurity>true</IntegratedSecurity>
+  </ConnectionProperties>
+  <DataSourceID>c06b7c1c-5a22-4988-80c6-58c92b92f23e</DataSourceID>
+</RptDataSource>
