@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "PSP_Projekat", "PSP_Projekat\PSP_Projekat.dtproj", "{20B99D8E-96BA-8873-F731-8F875AC04D83}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "PSP_Projekat_Izveštaji", "..\PSP_Projekat_Izveštaji\PSP_Projekat_Izveštaji\PSP_Projekat_Izveštaji.rptproj", "{7458E8CF-044C-7EE5-CD36-9AF25E45C5C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Development|Default = Development|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20B99D8E-96BA-8873-F731-8F875AC04D83}.Debug|Default.ActiveCfg = Development
+		{20B99D8E-96BA-8873-F731-8F875AC04D83}.Debug|Default.Build.0 = Development
+		{20B99D8E-96BA-8873-F731-8F875AC04D83}.DebugLocal|Default.ActiveCfg = Development
+		{20B99D8E-96BA-8873-F731-8F875AC04D83}.DebugLocal|Default.Build.0 = Development
+		{20B99D8E-96BA-8873-F731-8F875AC04D83}.Development|Default.ActiveCfg = Development
+		{20B99D8E-96BA-8873-F731-8F875AC04D83}.Development|Default.Build.0 = Development
+		{20B99D8E-96BA-8873-F731-8F875AC04D83}.Release|Default.ActiveCfg = Development
+		{20B99D8E-96BA-8873-F731-8F875AC04D83}.Release|Default.Build.0 = Development
+		{7458E8CF-044C-7EE5-CD36-9AF25E45C5C3}.Debug|Default.ActiveCfg = Debug
+		{7458E8CF-044C-7EE5-CD36-9AF25E45C5C3}.Debug|Default.Build.0 = Debug
+		{7458E8CF-044C-7EE5-CD36-9AF25E45C5C3}.Debug|Default.Deploy.0 = Debug
+		{7458E8CF-044C-7EE5-CD36-9AF25E45C5C3}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{7458E8CF-044C-7EE5-CD36-9AF25E45C5C3}.DebugLocal|Default.Build.0 = DebugLocal
+		{7458E8CF-044C-7EE5-CD36-9AF25E45C5C3}.DebugLocal|Default.Deploy.0 = DebugLocal
+		{7458E8CF-044C-7EE5-CD36-9AF25E45C5C3}.Development|Default.ActiveCfg = Release
+		{7458E8CF-044C-7EE5-CD36-9AF25E45C5C3}.Development|Default.Build.0 = Release
+		{7458E8CF-044C-7EE5-CD36-9AF25E45C5C3}.Development|Default.Deploy.0 = Release
+		{7458E8CF-044C-7EE5-CD36-9AF25E45C5C3}.Release|Default.ActiveCfg = Release
+		{7458E8CF-044C-7EE5-CD36-9AF25E45C5C3}.Release|Default.Build.0 = Release
+		{7458E8CF-044C-7EE5-CD36-9AF25E45C5C3}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B290606-A001-4F96-A7C1-44B413E13F08}
+	EndGlobalSection
+EndGlobal
